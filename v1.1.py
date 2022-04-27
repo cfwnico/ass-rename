@@ -2,11 +2,11 @@
 # 2022/4/28
 
 import os
+import sys
 
 
 def get_root_dir():
-    return r"Z:\Animation\BDRip\[VCB-Studio] 绯弹的亚里亚 [Ma10p_1080p]"
-    # return os.path.dirname(os.path.realpath(__file__))
+    return os.path.dirname(os.path.realpath(sys.argv[0]))
 
 
 def get_filename_list(path: str, ext: str):
